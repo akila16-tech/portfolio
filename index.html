@@ -5,38 +5,38 @@
         <meta name="viewpoint"
         content="width=device-width,initial-scales=1.0">
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 40px;
-        }
+        
+        
             .container {
                 width: 600px;
                 margin-left: 40px;
-                margin-top: 220px;
+                margin-top: 210px;
                 border-left: 4px solid #f4c20d;
                 padding-left: 20px;
             }
         img {
-            width: 280px;
+            width: 240px;
             height: 300px;
             border-radius: 50%;
+            
             object-position:top;
             float: right;
-            margin-right: 80px;
-            margin-top: 150px;
+            margin-right: 110px;
+            margin-top: -15px;
         }
         h1 {
             text-align: left;
             font-size: 50px;
             font-weight: bold;
-            color:#f4c20d;
+            color:#ffd43b;
+            text-shadow:0 0 8px rgba(255,212,59,0.8);
         }
         p {
             text-align: left;
-            font-size: 20px;
-            color: #555;
+            font-size: 25px;
+            color:#fcfcfc;
             line-height: 1.6;
         }
             .about-section {
@@ -46,8 +46,8 @@
                 margin-left: 40px;
          }
             .about-section h2 {
-                font-size:40px;
-                color: #333;
+                font-size:50px;
+                color: #ffd43b;
                 margin-bottom: 10px;
                 border-left: 4px solid #f4c20d;
                 padding-left:10px;
@@ -55,12 +55,35 @@
             }
             .about-section h2 {
                 font-size: 22px;
-                color:#555;
+                color:#f4c20d;
                 line-height: 1.9;
             }
         </style>
         </head>
         <body>
+            
+<div class="menu-btn" onclick="openMenu()">☰</div>
+
+<!-- Sidebar Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+    <a href="#home">Home</a>
+    <a href="#aboutme">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#Resume">Resume</a>
+    <a href="#Project">Project</a>
+    <a href="#Contact">Contact</a>
+</div>
+            <header class="top-header">
+            <h2 class="logo-name">Akilandeswari</h2>
+            <div class="social-icons">
+            <a href="https://github.com/akila16-tech" target="_blank">
+                <img src="github.jpeg" class="icon"></a>
+            <a href="https://www.linkedin.com/in/akilandeswari-s-undefined-4006a4314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="linkedln.jpeg" class="icon"></a>
+            <a href="mailto:akilandeswaris76@gmail.com" target="_blank">
+                <img src="mail.jpeg" class="icon"></a>
+                </div></header>
             <img src="myphoto.jpeg" alt="My Photo">
             <div class="container">
             <h1> Hi, I'm Akilandeswari</h1>
@@ -79,6 +102,40 @@
 
 
             </div>
-</body>        
+div id="skills" class="skills-section">
+    <h2 class="Skills-title">Skills</h2>
 
+    <h3>Technical Skills</h3>
+    <div class="skill-buttons">
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>JavaScript</button>
+        <button>Python</button>
+        <button>Java</button>
+        <button>Excel</button>
+        <button>MS Word</button>
+        
+    </div>
+
+    <h3>Soft Skills</h3>
+    <div class="skill-buttons">
+        <button>Communication</button>
+        <button>Teamwork</button>
+        <button>Creativity</button>
+        <button>Fast Learning</button>
+        <button>Problem solving</button>
+        <button>Positive attitude</button>
+    </div>
+
+
+            <script>
+function openMenu() {
+    document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+    document.getElementById("sideMenu").style.width = "0";
+}
+</script>
+</body>        
 </html>
