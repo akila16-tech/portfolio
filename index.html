@@ -41,7 +41,7 @@
         }
             .about-section {
                 margin-top: 200px;
-                padding: 20px;
+                
                 width: 80%;
                 margin-left: 40px;
          }
@@ -50,7 +50,7 @@
                 color: #ffd43b;
                 margin-bottom: 10px;
                 border-left: 4px solid #f4c20d;
-                padding-left:10px;
+                padding-left: 10px;
                 font-weight: bold;
             }
             .about-section h2 {
@@ -68,11 +68,11 @@
 <div id="sideMenu" class="side-menu">
     <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
     <a href="#home">Home</a>
-    <a href="#aboutme">About me</a>
+    <a href="#about">About </a>
     <a href="#skills">Skills</a>
-    <a href="#Resume">Resume</a>
-    <a href="#Project">Project</a>
-    <a href="#Contact">Contact</a>
+    <a href="#resume">Resume</a>
+    <a href="#project">Project</a>
+    <a href="#contact">Contact</a>
 </div>
             <header class="top-header">
             <h2 class="logo-name">Akilandeswari</h2>
@@ -91,7 +91,8 @@
                 Student in Jerusalem College of Engineering.</b></p>
             <p><b>I have interest in Web Development and designing.</b></p>
             </div>
-            <div class="about-section">
+            <section id="about" class="about-section"></section>
+            <div class="about-section"></div>
             <h2> About Me </h2>
             <p> I am <b>Akilandeswari</b>, A CSBS student with a focused interest in web development and designing
                 and I enjoy creating clean, user-friendly digital experiences. Developing strong skills in
@@ -102,33 +103,101 @@
 
 
             </div>
-div id="skills" class="skills-section">
-    <h2 class="Skills-title">Skills</h2>
+<div class="skills-section" id="skills">
+    <h2 class="skills-title">Skills</h2>
+    <p class="skills-para">
+        I have strong skills in Python programming, with hands-on experience building real-time  projects and got certified. I also have knowledge of HTML and CSS for building basic websites,
+        Apart from Python, I am familiar with tools like Github, VS code . I am a positive and self-motivated person with strong communication and the ability to work well both independently and in a team.I learn
+        new concepts quickly and enjoy solving problems with creativity and confidence.
+    </p>
+</div>
 
-    <h3>Technical Skills</h3>
-    <div class="skill-buttons">
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>JavaScript</button>
-        <button>Python</button>
-        <button>Java</button>
-        <button>Excel</button>
-        <button>MS Word</button>
+    
+        <div class="skill-box">
+            <img src="python.jpeg" class="skill-icon">
+            <span>PYTHON</span>
+        </div>
+
+        <div class="skill-box">
+            <img src="css.jpeg" class="skill-icon">
+            <span>CSS</span>
+        </div>
+
+        <div class="skill-box">
+            <img src="java.jpeg" class="skill-icon">
+            <span>JAVA</span>
+        </div>
+
+        <div class="skill-box">
+            <img src="excel.jpeg" class="skill-icon">
+            <span>EXCEL</span>
+        </div>
+
+        <div class="skill-box">
+            <img src="unity.jpeg" class="skill-icon">
+            <span>UNITY</span>
+            </div>
+        <div class="skill-box">
+            <img src="html.jpeg" class="skill-icon">
+            <span>HTML</span>
+        </div>
+        </div>
         
+<section id="project" class="project-section">
+
+  <h2 class="project-title">Project</h2>
+
+  <!-- Project Card -->
+  <div class="project-card">
+    <h3>Django </h3>
+
+    <p class="tech">
+      Python • Django • HTML • CSS • MySQL
+    </p>
+
+    <p class="desc">
+      This project is a Django-based web application that allows users to
+      register through an online form. The application validates user inputs,
+      stores data securely in a MySQL database, and demonstrates backend
+      processing using Django framework.
+    </p>
+
+    <a href=" https://akila16-tech.github.io/Django/"
+       target="_blank"
+       class="project-btn">
+      View on GitHub
+    </a>
+  </div>
+
+</section>
+<section id="resume" class="resume-section">
+  <h2 class="resume-title">Resume</h2>
+
+  <div class="resume-box">
+    <p>Click below to view my resume.</p>
+
+    <a href="resume.pdf" target="_blank" class="resume-btn">
+      View Resume (PDF)
+    </a>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+    <h2 class="contact-title">Contact</h2>
+
+    <div class="contact-box">
+        <p class="contact-text">
+            please feel free to contact me for any opportunities.
+        </p>
+
+        <div class="contact-links">
+            <a href="mailto:akilandeswaris76@gmail.com">📧 akilandeswaris76@gmail.com</a>
+            <a href="https://www.linkedin.com/in/akilandeswari-s-undefined-4006a4314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">💼linkedln.com/in/akilandeswari </a>
+            <a href="https://github.com/akila16-tech" target="_blank">💻github.com/akila16-tech </a>
+        </div>
     </div>
+</section>
 
-    <h3>Soft Skills</h3>
-    <div class="skill-buttons">
-        <button>Communication</button>
-        <button>Teamwork</button>
-        <button>Creativity</button>
-        <button>Fast Learning</button>
-        <button>Problem solving</button>
-        <button>Positive attitude</button>
-    </div>
-
-
-            <script>
+           <script>
 function openMenu() {
     document.getElementById("sideMenu").style.width = "250px";
 }
@@ -138,4 +207,4 @@ function closeMenu() {
 }
 </script>
 </body>        
-</html>
+            </html>
