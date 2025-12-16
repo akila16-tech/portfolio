@@ -435,67 +435,64 @@ p,
 /* ===== MOBILE VIEW FIX ===== */
 @media (max-width: 768px) {
 
-  /* Common section gap reduce */
+  /* Overall text size increase */
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* All sections – unwanted big gaps remove */
   section {
     padding: 30px 16px !important;
     margin: 0 !important;
   }
 
-  /* Titles (About, Skills, Project, Resume, Contact) */
+  /* Section titles (About, Skills, Project, Resume, Contact) */
   section h2 {
-    font-size: 26px !important;
+    font-size: 28px !important;
     margin-bottom: 16px !important;
-    text-align: left !important;
+    text-align: center;
   }
 
   /* Paragraph text – bigger & readable */
   p {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
+    font-size: 17px !important;
     margin-bottom: 16px !important;
   }
 
   /* Skills paragraph gap fix */
   .skills-para {
     margin-bottom: 20px !important;
-    font-size: 16px !important;
   }
 
-  /* Skills container */
-  .skills-container {
-    gap: 12px !important;
-    margin-top: 10px !important;
+  /* Skills list center + gap between boxes */
+  .skills-container,
+  .skills-list {
+    gap: 14px !important;
   }
 
-  /* Each skill box */
+  /* Skill boxes */
   .skill-box {
     width: 100% !important;
     max-width: 320px;
-    padding: 12px !important;
     margin: 0 auto !important;
+    font-size: 16px;
   }
 
-  /* Project card */
-  .project-card {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-    padding: 16px !important;
-  }
-
-  /* Resume box */
-  .resume-box {
-    margin-top: 20px !important;
-    padding: 16px !important;
-  }
-
-  /* Contact box */
+  /* Projects & Resume cards gap fix */
+  .project-card,
+  .resume-card,
   .contact-box {
-    padding: 16px !important;
-    margin-top: 20px !important;
+    margin: 20px auto !important;
+    padding: 18px !important;
+    width: 100%;
+    max-width: 340px;
   }
 
-  /* Remove huge empty space */
-  body {
-    overflow-x: hidden;
+  /* Contact text alignment */
+  .contact-box p,
+  .contact-box a {
+    font-size: 16px !important;
   }
+
 }
