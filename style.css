@@ -432,67 +432,21 @@ p,
 .contact-box .contact-links {
   margin-top: 0px;       /* links mela move aagum */
 }
-/* ===== MOBILE VIEW FIX ===== */
 @media (max-width: 768px) {
-
-  /* Overall text size increase */
   body {
     font-size: 18px;
-    line-height: 1.6;
   }
 
-  /* All sections – unwanted big gaps remove */
-  section {
-    padding: 30px 16px !important;
-    margin: 0 !important;
-  }
-
-  /* Section titles (About, Skills, Project, Resume, Contact) */
-  section h2 {
-    font-size: 28px !important;
-    margin-bottom: 16px !important;
-    text-align: center;
-  }
-
-  /* Paragraph text – bigger & readable */
   p {
-    font-size: 17px !important;
-    margin-bottom: 16px !important;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
-  /* Skills paragraph gap fix */
-  .skills-para {
-    margin-bottom: 20px !important;
+  h2 {
+    font-size: 26px;
   }
 
-  /* Skills list center + gap between boxes */
-  .skills-container,
-  .skills-list {
-    gap: 14px !important;
-  }
-
-  /* Skill boxes */
   .skill-box {
-    width: 100% !important;
-    max-width: 320px;
-    margin: 0 auto !important;
-    font-size: 16px;
+    width: 90%;
   }
-
-  /* Projects & Resume cards gap fix */
-  .project-card,
-  .resume-card,
-  .contact-box {
-    margin: 20px auto !important;
-    padding: 18px !important;
-    width: 100%;
-    max-width: 340px;
-  }
-
-  /* Contact text alignment */
-  .contact-box p,
-  .contact-box a {
-    font-size: 16px !important;
-  }
-
 }
