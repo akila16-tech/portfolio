@@ -432,108 +432,70 @@ p,
 .contact-box .contact-links {
   margin-top: 0px;       /* links mela move aagum */
 }
-/* ===== GLOBAL RESET (REMOVES UNWANTED GAPS) ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
-
-/* ===== GENERAL SECTION CONTROL ===== */
-section {
-    padding: 30px 16px;   /* SAME spacing for all sections */
-}
-
-/* REMOVE EXTRA SPACE BETWEEN SECTIONS */
-section + section {
-    margin-top: 0;
-}
-
-/* ===== TITLES (ABOUT / SKILLS / PROJECTS / RESUME / CONTACT) ===== */
-h2 {
-    color: #ffcc4d;       /* Yellow title */
-    font-size: 26px;
-    margin-bottom: 14px;
-    text-align: left;
-}
-
-/* ===== PARAGRAPHS (MAKE SENTENCE STYLE, NOT LINE-BY-LINE) ===== */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 14px;
-}
-
-/* ===== SKILLS BOX CENTER + GAP (GUARANTEED) ===== */
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;            /* <-- THIS IS THE GAP */
-}
-
-.skill-box {
-    width: 85%;
-    max-width: 360px;
-    padding: 12px 16px;
-    background: rgba(255,255,255,0.12);
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* ===== PROJECT CARD FIX (NO HUGE WHITE OUTER BOX) ===== */
-.project-card {
-    width: 90%;
-    max-width: 420px;
-    margin: 14px auto;
-    padding: 16px;
-    border-radius: 10px;
-    background: #ffffff;
-}
-
-/* ===== CENTER ONLY PROJECT WORD ===== */
-.projects-title {
-    text-align: center;
-}
-
-/* ===== CONTACT BOX SMALL & CENTER ===== */
-.contact-box {
-    width: 90%;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 14px;
-    border-radius: 10px;
-    background: #ffffff;
-    text-align: center;
-}
-
-/* ===== MENU SCROLL FIX ===== */
-html {
-    scroll-behavior: smooth;
-}
-
-/* FIX HEADER OVERLAP ISSUE */
-#about, #skills, #projects, #resume, #contact {
-    scroll-margin-top: 80px;
-}
-
-/* ===== MOBILE ONLY EXTRA TIGHT LOOK ===== */
+/* ===== MOBILE VIEW FIX ===== */
 @media (max-width: 768px) {
-    section {
-        padding: 24px 14px;
-    }
 
-    h2 {
-        font-size: 24px;
-    }
+  /* Common section gap reduce */
+  section {
+    padding: 30px 16px !important;
+    margin: 0 !important;
+  }
 
-    p {
-        font-size: 15px;
-    }
-    }
+  /* Titles (About, Skills, Project, Resume, Contact) */
+  section h2 {
+    font-size: 26px !important;
+    margin-bottom: 16px !important;
+    text-align: left !important;
+  }
+
+  /* Paragraph text – bigger & readable */
+  p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Skills paragraph gap fix */
+  .skills-para {
+    margin-bottom: 20px !important;
+    font-size: 16px !important;
+  }
+
+  /* Skills container */
+  .skills-container {
+    gap: 12px !important;
+    margin-top: 10px !important;
+  }
+
+  /* Each skill box */
+  .skill-box {
+    width: 100% !important;
+    max-width: 320px;
+    padding: 12px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Project card */
+  .project-card {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 16px !important;
+  }
+
+  /* Resume box */
+  .resume-box {
+    margin-top: 20px !important;
+    padding: 16px !important;
+  }
+
+  /* Contact box */
+  .contact-box {
+    padding: 16px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Remove huge empty space */
+  body {
+    overflow-x: hidden;
+  }
+}
