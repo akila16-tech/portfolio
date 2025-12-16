@@ -459,7 +459,7 @@ section p {
 @media (max-width: 768px) {
 
   body {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   h1 {
@@ -471,18 +471,18 @@ section p {
   }
 
   p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1.6;
   }
 
   .about-section p,
   .skills-para,
   .projects-section p {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .skills-box {
-    font-size: 17px;
+    font-size: 25px;
   }
 
 }
