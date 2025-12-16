@@ -171,6 +171,10 @@ html {
   
   background-color: transparent;
   text-align: center;
+  margin-top:-1500px;
+}
+#project-section h2 {
+    text-align: center;
 }
 
 #projects h2 {
@@ -230,10 +234,10 @@ html {
 }
 .projects-title{
     text-align:center;
-    font-size: 36px;
-    font-weight: bold;
+    width: 100%;
+    margin: 0 auto 40px;
     color: yellow;
-    margin-bottom: 30px;
+    font-size: 32px;
 }
 /* Resume Section */
 .resume-section {
@@ -282,6 +286,7 @@ html {
 .contact-section {
     margin: 40px auto;
     text-align: center;
+    margin-top: -450px;
 }
 
 /* Contact heading */
@@ -302,7 +307,7 @@ html {
 /* White contact box */
 .contact-box {
     background: #ffffff;
-    width: 500px;
+    width: 400px;
     max-width: 420px;
     margin: 0 auto;
     padding: 20px 30px;
@@ -397,4 +402,33 @@ p,
 /* FORCE GAP BETWEEN EACH SKILL BOX */
 .skill-box {
   margin-bottom: 20px;   /* 👈 THIS IS THE KEY */
+}
+.project-title {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  font-size: 36px;
+  color: #ffcc4d;
+  font-weight: bold;
+  
+}
+#project-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  margin-top:-1400px;
+  
+}
+
+.project-title {
+  color: yellow;
+  font-size: 36px;
+  text-align: center;
+}
+.contact-box p {
+  margin-bottom: 10px;   /* sentence keezha gap kammi */
+}
+
+.contact-box .contact-links {
+  margin-top: 0px;       /* links mela move aagum */
 }
