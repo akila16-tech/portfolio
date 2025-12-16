@@ -455,34 +455,72 @@ section p {
   gap: 14px !important;
 }
 
-/* ===== MOBILE VIEW FONT FIX ===== */
+/* =========================
+   MOBILE VIEW FIX (PHONE)
+   ========================= */
 @media (max-width: 768px) {
 
+  /* Whole page spacing */
   body {
-    font-size: 25px;
+    font-size: 18px;          /* overall font bigger */
+    line-height: 1.7;
   }
 
+  section {
+    padding: 30px 16px !important;  /* unwanted big gaps remove */
+    margin: 0 !important;
+  }
+
+  /* Section titles */
   h1 {
-    font-size: 25px;
+    font-size: 28px !important;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 26px !important;
+    margin-bottom: 14px !important;
   }
 
+  /* Paragraph text */
   p {
-    font-size: 25px;
-    line-height: 1.6;
+    font-size: 18px !important;
+    margin-bottom: 14px !important;
   }
 
-  .about-section p,
-  .skills-para,
-  .projects-section p {
-    font-size: 25px;
+  /* About + Skills content width */
+  .about-section,
+  .skills-section,
+  .project-section,
+  .resume-section,
+  .contact-section {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .skills-box {
-    font-size: 25px;
+  /* Skill boxes */
+  .skill-box,
+  .skills-box,
+  .skills-container div {
+    width: 100% !important;
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
   }
 
+  /* Project cards */
+  .project-card {
+    width: 100% !important;
+    margin: 16px 0 !important;
+  }
+
+  /* Contact box */
+  .contact-box {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  /* Image (profile photo) */
+  img {
+    max-width: 140px;
+    height: auto;
+  }
 }
