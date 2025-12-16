@@ -456,71 +456,116 @@ section p {
 }
 
 /* =========================
-   MOBILE VIEW FIX (PHONE)
+   MOBILE VIEW ONLY
    ========================= */
 @media (max-width: 768px) {
 
-  /* Whole page spacing */
+  /* GENERAL RESET */
   body {
-    font-size: 18px;          /* overall font bigger */
+    font-size: 18px;
     line-height: 1.7;
   }
 
   section {
-    padding: 30px 16px !important;  /* unwanted big gaps remove */
+    padding: 40px 18px !important;
     margin: 0 !important;
   }
 
-  /* Section titles */
-  h1 {
-    font-size: 28px !important;
+  /* ================= HERO ================= */
+  .hero-section {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 18px !important;
+    gap: 20px;
   }
 
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+
+  .hero-text h2 {
+    font-size: 34px;
+  }
+
+  .hero-role {
+    font-size: 20px;
+  }
+
+  .hero-desc {
+    font-size: 18px;
+  }
+
+  /* ================= HEADINGS ================= */
   h2 {
-    font-size: 26px !important;
-    margin-bottom: 14px !important;
+    font-size: 32px !important;
+    margin-bottom: 20px !important;
+    text-align: center;
   }
 
-  /* Paragraph text */
-  p {
-    font-size: 18px !important;
-    margin-bottom: 14px !important;
-  }
-
-  /* About + Skills content width */
-  .about-section,
-  .skills-section,
-  .project-section,
-  .resume-section,
-  .contact-section {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* Skill boxes */
-  .skill-box,
-  .skills-box,
-  .skills-container div {
-    width: 100% !important;
-    font-size: 18px !important;
+  h3 {
+    font-size: 24px !important;
     margin-bottom: 12px !important;
   }
 
-  /* Project cards */
+  /* ================= ABOUT ================= */
+  .about-content {
+    gap: 14px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+    padding: 18px;
+    line-height: 1.7;
+  }
+
+  /* ================= SKILLS ================= */
+  .skills-section {
+    text-align: center;
+  }
+
+  .skill-box {
+    width: 100%;
+    max-width: 360px;
+    margin: 12px auto;
+    padding: 14px 16px;
+    font-size: 18px;
+  }
+
+  /* ================= PROJECTS ================= */
   .project-card {
-    width: 100% !important;
-    margin: 16px 0 !important;
+    width: 100%;
+    max-width: 360px;
+    margin: 14px auto;
+    padding: 16px;
   }
 
-  /* Contact box */
+  .project-card h3 {
+    font-size: 22px;
+  }
+
+  .project-card p {
+    font-size: 17px;
+  }
+
+  /* ================= RESUME ================= */
+  .resume-btn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  /* ================= CONTACT ================= */
   .contact-box {
-    width: 100% !important;
-    padding: 20px !important;
+    width: 100%;
+    max-width: 360px;
+    margin: 14px auto;
+    padding: 16px;
+    font-size: 18px;
   }
 
-  /* Image (profile photo) */
-  img {
-    max-width: 140px;
-    height: auto;
-  }
 }
