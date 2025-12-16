@@ -455,22 +455,34 @@ section p {
   gap: 14px !important;
 }
 
-/* Mobile text size */
+/* ===== MOBILE VIEW FONT FIX ===== */
 @media (max-width: 768px) {
+
   body {
     font-size: 18px;
   }
 
-  section h2 {
+  h1 {
     font-size: 28px;
   }
 
-  section p {
-    font-size: 17px;
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
     line-height: 1.6;
   }
-}
-/* About Me section bold text color */
-#about b{
-  color: red;
+
+  .about-section p,
+  .skills-para,
+  .projects-section p {
+    font-size: 18px;
+  }
+
+  .skills-box {
+    font-size: 17px;
+  }
+
 }
