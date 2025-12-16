@@ -1,3 +1,4 @@
+
 body {
     margin-top: 70px;
     padding: 0px 40px;
@@ -97,33 +98,39 @@ html {
 
 }
 .skills-section {
-    text-align: center;
+    padding: 40px 20px;
+    margin-top:-1400px;
     
     
 }
 
 .skills-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: yellow;
+    border-left: 4px slid #ffcc4d;
+    padding-left: 12px;
 }
 
 .skill-box {
     width: 260px;
-    max-width: 500px;
-    background: #e9ebf3;
-    padding: 15px 20px;
-    margin: 15px;
-    margin-bottom: 20px;
-    border-radius: 12px;
     display: flex;
     align-items: center;
-    
-    border: 2px solid #d0d5e3;
-    
+    justify-content: center;
+    gap: 12px;
+    background: #f5f7fa;
+    padding: 12px 12px;
+    border-radius: 12px;
+    margin: 0;
 }
-
+.skills-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
 .skill-box:hover {
     background: rgba(255,255,255,0.2);
     transform: translateY(-3px);
@@ -133,7 +140,7 @@ html {
 .skill-icon {
     width: 40px;
     height: 40px;
-    margin-right: 18px;
+    margin-right:10px;
 }
 
 .skill-box span {
@@ -149,14 +156,15 @@ html {
     width: 100%;
 }
 .skills-para {
+    writing-mode: horizontal-tb;
+    transform: none;
     color: #ffffff;
-    font-size: 24px;
-    text-align: center;
-    margin: 10px auto 25px auto;
-    max-width: 600px;
-    line-height: 1.6;
+    font-size: 25px;
+    text-align: left;
+    max-width: 700px;
+    line-height: 1.7;
     opacity: 0.9;
-
+    margin-bottom: 30px;
 }
 /* ===== Projects Section ===== */
 #projects-section {
@@ -321,4 +329,72 @@ section {
     padding: 80px 20px;
     scroll-margin-top: 80px;
 }
+/* FORCE all paragraphs to be normal sentence */
+p,
+.skills-para,
+.about-section p {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  transform: none;
 
+  white-space: normal;
+  
+  line-height: 1.7;
+  max-width: 1200px;
+}
+/* Skills section overall */
+.skills-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  margin-top:-1400px;
+}
+
+/* Title */
+.skills-title {
+  font-size: 36px;
+  color: yellow;
+  margin-bottom: 30px;
+}
+
+/* Container – THIS is the KEY */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* CENTER horizontally */
+  gap: 16px; /* GAP between boxes */
+ 
+}
+
+/* Each skill box */
+.skill-box {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background: #f5f7fa;
+  padding: 14px 20px;
+  border-radius: 14px;
+  margin-bottom: -25px;
+  margin: 0 auto;  /* FORCE center */
+}
+
+/* Icon */
+.skill-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Text */
+.skill-box span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+/* FORCE GAP BETWEEN EACH SKILL BOX */
+.skill-box {
+  margin-bottom: 20px;   /* 👈 THIS IS THE KEY */
+}
