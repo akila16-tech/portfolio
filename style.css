@@ -99,7 +99,7 @@ html {
 }
 .skills-section {
     padding: 40px 20px;
-    margin-top:-1400px;
+    margin-top:-1500px;
     
     
 }
@@ -171,7 +171,7 @@ html {
   
   background-color: transparent;
   text-align: center;
-  margin-top:-1500px;
+  
 }
 #project-section h2 {
     text-align: center;
@@ -286,7 +286,7 @@ html {
 .contact-section {
     margin: 40px auto;
     text-align: center;
-    margin-top: -450px;
+    margin-top:-450px;
 }
 
 /* Contact heading */
@@ -354,7 +354,7 @@ p,
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
-  margin-top:-1400px;
+ margin-top: -1510px;
 }
 
 /* Title */
@@ -416,7 +416,7 @@ p,
   width: 100%;
   display: flex;
   justify-content: center;   /* horizontal center */
-  margin-top:-1400px;
+  margin-top:-900px;
   
 }
 
@@ -432,21 +432,45 @@ p,
 .contact-box .contact-links {
   margin-top: 0px;       /* links mela move aagum */
 }
+/* ===== REMOVE UNWANTED GAPS (GLOBAL FIX) ===== */
+section {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 40px 16px !important;
+  margin: 0 !important;
+}
+
+/* Headings gap reduce */
+section h2 {
+  margin-bottom: 20px !important;
+}
+
+/* Paragraph gap reduce */
+section p {
+  margin-bottom: 16px !important;
+}
+
+/* Skills box spacing */
+.skills-container {
+  gap: 14px !important;
+}
+
+/* Mobile text size */
 @media (max-width: 768px) {
   body {
     font-size: 18px;
   }
 
-  p {
-    font-size: 18px;
-    line-height: 1.7;
+  section h2 {
+    font-size: 28px;
   }
 
-  h2 {
-    font-size: 26px;
+  section p {
+    font-size: 17px;
+    line-height: 1.6;
   }
-
-  .skill-box {
-    width: 90%;
-  }
+}
+/* About Me section bold text color */
+#about b{
+  color: red;
 }
