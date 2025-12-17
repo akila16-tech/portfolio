@@ -459,6 +459,19 @@ section p {
    MOBILE VIEW ONLY
    ========================= */
 @media (max-width: 768px) {
+    .hero-section {
+        display:flex;
+        flex-direction: columnn;
+        align-items: center;
+        text-lign:: center;
+    }
+    .hero-section .headshot {
+        order: -1;
+        justify-content: center;
+    }
+    .hero-sectionn.textt {
+        order: 1;
+    }
 
   /* GENERAL RESET */
   body {
