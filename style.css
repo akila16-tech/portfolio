@@ -463,7 +463,7 @@ section p {
         display:flex;
         flex-direction: columnn;
         align-items: center;
-        text-lign:: center;
+        text-align: center;
     }
     .hero-section .headshot {
         order: -1;
