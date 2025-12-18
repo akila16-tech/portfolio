@@ -476,6 +476,7 @@ section p {
   .hero-image img {
     width: 200px;
     margin-bottom: 20px;
+    padding: auto;
   }
 
   .hero-text h1,
