@@ -454,119 +454,79 @@ section p {
 .skills-container {
   gap: 14px !important;
 }
-/* ----------------------------------- */
-/* GLOBAL MOBILE RESPONSIVE STYLES     */
-/* For screens width <= 768px         */
-/* ----------------------------------- */
-
+/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
 
-  /* 1) GENERAL RESET & CENTER EVERYTHING */
-  body, html {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-    text-align: center;
+  body {
+    font-size: 18px;
+    line-height: 1.8;
   }
 
-  /* Make all sections centered */
-  section {
-    padding: 30px 15px !important;
-    text-align: center !important;
-  }
-
-  h1, h2, h3, p {
-    text-align: center !important;
-  }
-
-  /* 2) HERO – PHOTO + TEXT */
+  /* ---------- HERO / FIRST PAGE ---------- */
   .hero-section {
+    min-height: 100vh;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px !important;
+    text-align: center;
   }
 
-  .hero-section img {
-    width: 180px !important;
-    height: 180px !important;
-    border-radius: 50%;
-    margin-bottom: 18px !important;
+  .hero-image img {
+    width: 200px;
+    margin-bottom: 20px;
   }
 
-  .hero-section h1 {
-    font-size: 30px !important;
-    margin: 6px 0 !important;
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 34px;
+    line-height: 1.3;
   }
 
-  .hero-section h2 {
-    font-size: 26px !important;
-    margin: 4px 0 !important;
+  .hero-role {
+    font-size: 20px;
+    margin-top: 10px;
   }
 
-  .hero-section p {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-    margin: 6px 0 !important;
+  .hero-desc {
+    font-size: 18px;
+    max-width: 100%;
   }
 
-  /* 3) HEADINGS */
-  h2 {
-    font-size: 28px !important;
-    font-weight: bold;
-    margin: 18px auto !important;
+  /* ---------- SECTION COMMON ---------- */
+  section {
+    padding: 60px 20px;
   }
 
-  h3 {
-    font-size: 24px !important;
-    margin: 14px auto !important;
+  section h2 {
+    font-size: 32px;
+    text-align: center;
   }
 
-  /* 4) PARAGRAPHS */
+  /* ---------- ABOUT / SKILLS / PROJECT TEXT ---------- */
   p {
-    font-size: 18px !important;
-    margin: 8px auto !important;
-    line-height: 1.6 !important;
+    font-size: 18px;
   }
 
-  /* 5) CARD ELEMENTS */
-  .about-card,
-  .project-card,
-  .contact-card,
-  .testimony-card {
-    width: 95% !important;
-    margin: 12px auto !important;
-    padding: 16px !important;
-    font-size: 18px !important;
+  /* ---------- SKILLS BOX ---------- */
+  .skills-box,
+  .skill-card {
+    font-size: 18px;
+    padding: 16px;
   }
 
-  /* 6) BUTTONS */
-  button, .btn, a.btn {
-    font-size: 18px !important;
-    padding: 12px 18px !important;
-    margin: 8px auto !important;
+  /* ---------- PROJECT CARD ---------- */
+  .project-card {
+    padding: 20px;
+    font-size: 18px;
   }
 
-  /* 7) SKILL BUTTONS / ICON BOXES */
-  .skill-box,
-  .skill-buttons button {
-    width: 90% !important;
-    font-size: 18px !important;
-    margin: 10px auto !important;
-    padding: 12px 18px !important;
-  }
-
-  /* 8) NAVBAR SPACING */
-  .menu-btn, .side-menu a {
-    font-size: 20px !important;
-    padding: 12px !important;
-  }
-
-  /* 9) GENERAL SPACING */
-  .section-gap {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+  /* ---------- BUTTONS ---------- */
+  button,
+  .btn,
+  a.button {
+    font-size: 18px;
+    padding: 12px 20px;
   }
 }
