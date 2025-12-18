@@ -454,91 +454,119 @@ section p {
 .skills-container {
   gap: 14px !important;
 }
+/* ----------------------------------- */
+/* GLOBAL MOBILE RESPONSIVE STYLES     */
+/* For screens width <= 768px         */
+/* ----------------------------------- */
 
-/* ===============================
-   MOBILE FINAL FIX (ALL SECTIONS)
-   =============================== */
 @media (max-width: 768px) {
 
-  /* GENERAL RESET */
-  body {
-    font-size: 18px;
+  /* 1) GENERAL RESET & CENTER EVERYTHING */
+  body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
     overflow-x: hidden;
-  }
-
-  section {
-    padding: 40px 16px;
     text-align: center;
   }
 
-  /* ===== HERO / HOME ===== */
+  /* Make all sections centered */
+  section {
+    padding: 30px 15px !important;
+    text-align: center !important;
+  }
+
+  h1, h2, h3, p {
+    text-align: center !important;
+  }
+
+  /* 2) HERO – PHOTO + TEXT */
   .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 30px 16px;
-    text-align: center;
+    padding: 30px 10px !important;
   }
 
-  .hero-section img,
-  .hero-image img {
-    width: 180px;
-    height: 180px;
+  .hero-section img {
+    width: 180px !important;
+    height: 180px !important;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 18px !important;
   }
 
-  .hero-section h1,
-  .hero-section h2 {
+  .hero-section h1 {
     font-size: 30px !important;
-    line-height: 1.3;
-    margin: 8px 0;
+    margin: 6px 0 !important;
+  }
+
+  .hero-section h2 {
+    font-size: 26px !important;
+    margin: 4px 0 !important;
   }
 
   .hero-section p {
     font-size: 18px !important;
-    line-height: 1.6;
-    max-width: 95%;
-    margin: 8px auto;
+    line-height: 1.6 !important;
+    margin: 6px 0 !important;
   }
 
-  /* ===== ABOUT / SKILLS / PROJECT TITLES ===== */
+  /* 3) HEADINGS */
   h2 {
     font-size: 28px !important;
-    margin-bottom: 20px;
-    text-align: center;
+    font-weight: bold;
+    margin: 18px auto !important;
   }
 
-  /* ===== PARAGRAPHS ===== */
+  h3 {
+    font-size: 24px !important;
+    margin: 14px auto !important;
+  }
+
+  /* 4) PARAGRAPHS */
   p {
     font-size: 18px !important;
-    line-height: 1.6;
-    max-width: 95%;
-    margin: 10px auto;
-    text-align: center;
+    margin: 8px auto !important;
+    line-height: 1.6 !important;
   }
 
-  /* ===== SKILLS BOXES ===== */
-  .skills-box,
-  .skill-item,
-  .skills-list div {
-    width: 90% !important;
-    margin: 10px auto;
-    font-size: 18px;
-  }
-
-  /* ===== PROJECT CARDS ===== */
+  /* 5) CARD ELEMENTS */
+  .about-card,
   .project-card,
-  .project {
-    width: 92% !important;
-    margin: 15px auto;
-    text-align: center;
+  .contact-card,
+  .testimony-card {
+    width: 95% !important;
+    margin: 12px auto !important;
+    padding: 16px !important;
+    font-size: 18px !important;
   }
 
-  /* ===== NAV / MENU ===== */
-  nav ul {
-    text-align: center;
+  /* 6) BUTTONS */
+  button, .btn, a.btn {
+    font-size: 18px !important;
+    padding: 12px 18px !important;
+    margin: 8px auto !important;
+  }
+
+  /* 7) SKILL BUTTONS / ICON BOXES */
+  .skill-box,
+  .skill-buttons button {
+    width: 90% !important;
+    font-size: 18px !important;
+    margin: 10px auto !important;
+    padding: 12px 18px !important;
+  }
+
+  /* 8) NAVBAR SPACING */
+  .menu-btn, .side-menu a {
+    font-size: 20px !important;
+    padding: 12px !important;
+  }
+
+  /* 9) GENERAL SPACING */
+  .section-gap {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
   }
 }
