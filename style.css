@@ -456,6 +456,12 @@ nav{
 html{
   scroll-behavior: smooth;
 }
+.about-box {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
 /* MOBILE VIEW */
 @media (max-width: 768px) {
 
@@ -490,8 +496,12 @@ html{
 
   /* ABOUT + EDUCATION */
   .about-edu {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+  }
+  .about-box{
+    width:90%;
   }
 
   /* SKILLS */
