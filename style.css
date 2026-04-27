@@ -507,19 +507,25 @@ html{
     }
 
     .hero-img img {
-        width: 180px;
-        height: 180px;
+        width: 260px;
+        height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      
     }
 
     /* ABOUT + EDUCATION */
     .about-edu {
         flex-direction: column;
         align-items: center;
+      display: flex;
+      gap: 20px;
     }
 
     .about-box {
         width: 90%;
         max-width: 350px;
+      padding: 20px;
     }
 
     /* TEXT BREAK FIX */
