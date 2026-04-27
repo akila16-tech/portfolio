@@ -466,9 +466,12 @@ html{
 
     /* NAVBAR */
     nav {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
-        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
     }
 
     .nav-links {
