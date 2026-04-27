@@ -19,7 +19,7 @@
   <nav>
     <div class="logo">AK</div>
 
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about-edu">About</a>
       <a href="#about-edu">Education</a>
@@ -28,7 +28,7 @@
       <a href="#project">Projects</a>
       <a href="#contact">Contact Us</a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()"> ☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <div class="nav-icons">
   <a href="https://github.com/akila16-tech" target="_blank">
@@ -235,6 +235,7 @@
 </section>
   <script>
 function toggleMenu() {
+    alert("Clicked");
     document.getElementById("navLinks").classList.toggle("active");
 }
 </script>
