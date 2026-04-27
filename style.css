@@ -462,6 +462,11 @@ html{
     margin: auto;
     padding: 20px;
 }
+.menu-toggle{
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
 
     /* NAVBAR */
@@ -475,8 +480,24 @@ html{
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        display: none;   /* 🔥 hidden */
+        padding: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+  .nav-links a {
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;  /* 🔥 show */
     }
 
     /* HERO SECTION */
@@ -505,6 +526,9 @@ html{
     p, li {
         word-wrap: break-word;
         line-height: 1.6;
+    }
+   .menu-toggle {
+        display: block;
     }
 }
 
