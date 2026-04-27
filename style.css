@@ -462,61 +462,46 @@ html{
     margin: auto;
     padding: 20px;
 }
-/* MOBILE VIEW */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-  /* HERO SECTION */
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .hero-img img {
-    width: 180px;
-    height: 180px;
-  }
+    .hero-img img {
+        width: 180px;
+        height: 180px;
+    }
 
-  /* TEXT SIZE */
-  h1 {
-    font-size: 28px;
-  }
+    /* ABOUT + EDUCATION */
+    .about-edu {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  /* ABOUT + EDUCATION */
-  .about-edu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-box{
-    width:90%;
-  }
+    .about-box {
+        width: 90%;
+        max-width: 350px;
+    }
 
-  /* SKILLS */
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-
-  /* PROJECT */
-  .project-card {
-    width: 100%;
-  }
-
-  /* CONTACT */
-  .contact-box {
-    width: 90%;
-  }
-
+    /* TEXT BREAK FIX */
+    p, li {
+        word-wrap: break-word;
+        line-height: 1.6;
+    }
 }
+
